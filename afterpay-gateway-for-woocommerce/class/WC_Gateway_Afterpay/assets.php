@@ -5,26 +5,28 @@
 
 $get_afterpay_assets = function ( $country ) {
 
-	$global_assets = array(
-		'cart_page_express_button' => '<tr><td colspan="2" class="btn-afterpay_express_td"><button id="afterpay_express_button" class="btn-afterpay_express btn-afterpay_express_cart" type="button" disabled><img src="https://static.afterpay.com/button/checkout-with-afterpay/[THEME].svg" alt="Checkout with Afterpay" /></button></td></tr>',
-	);
+	$global_assets = array();
 
 	$assets = array(
 		'US' => array(
-			'help_center_url' => 'https://help.afterpay.com/hc/en-us/requests/new',
-			'retailer_url'    => 'https://www.afterpay.com/for-retailers',
+			'help_center_url'          => 'https://help.afterpay.com/hc/en-us/requests/new',
+			'retailer_url'             => 'https://www.afterpay.com/for-retailers',
+			'cart_page_express_button' => '<button id="afterpay_express_button" class="btn-afterpay_express btn-afterpay_express_cart [THEME]" type="button" disabled>Checkout with <img src="https://static.afterpay.com/en-US/integration/logo/lockup/color-[LOGO_COLOR]-32.svg" alt="Afterpay" /></button>',
 		),
 		'CA' => array(
-			'help_center_url' => 'https://help.afterpay.com/hc/en-ca/requests/new',
-			'retailer_url'    => 'https://www.afterpay.com/en-CA/for-retailers',
+			'help_center_url'          => 'https://help.afterpay.com/hc/en-ca/requests/new',
+			'retailer_url'             => 'https://www.afterpay.com/en-CA/for-retailers',
+			'cart_page_express_button' => '<button id="afterpay_express_button" class="btn-afterpay_express btn-afterpay_express_cart [THEME]" type="button" disabled>Checkout with <img src="https://static.afterpay.com/en-CA/integration/logo/lockup/color-[LOGO_COLOR]-32.svg" alt="Afterpay" /></button>',
 		),
 		'AU' => array(
-			'help_center_url' => 'https://help.afterpay.com/hc/en-au/requests/new',
-			'retailer_url'    => 'https://www.afterpay.com/en-AU/business',
+			'help_center_url'          => 'https://help.afterpay.com/hc/en-au/requests/new',
+			'retailer_url'             => 'https://www.afterpay.com/en-AU/business',
+			'cart_page_express_button' => '<button id="afterpay_express_button" class="btn-afterpay_express btn-afterpay_express_cart [THEME]" type="button" disabled>Checkout with <img src="https://static.afterpay.com/en-AU/integration/logo/lockup/color-[LOGO_COLOR]-32.svg" alt="Afterpay" /></button>',
 		),
 		'NZ' => array(
-			'help_center_url' => 'https://help.afterpay.com/hc/en-nz/requests/new',
-			'retailer_url'    => 'https://www.afterpay.com/en-NZ/business',
+			'help_center_url'          => 'https://help.afterpay.com/hc/en-nz/requests/new',
+			'retailer_url'             => 'https://www.afterpay.com/en-NZ/business',
+			'cart_page_express_button' => '<button id="afterpay_express_button" class="btn-afterpay_express btn-afterpay_express_cart [THEME]" type="button" disabled>Checkout with <img src="https://static.afterpay.com/en-NZ/integration/logo/lockup/color-[LOGO_COLOR]-32.svg" alt="Afterpay" /></button>',
 		),
 	);
 
